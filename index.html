@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grão Nobre | Cafeteria no Centro do Rio de Janeiro</title>
+    <meta name="description"
+        content="Cafés especiais, bebidas quentes e geladas, salgados e doces no Centro do Rio de Janeiro. Veja o cardápio e peça pelo delivery.">
+    <link rel="icon" href="assets/iconecafe.png" type="image/png">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="tablets.css">
+    <link rel="stylesheet" href="monitor.css">
+    <link rel="stylesheet" href="2k-4k.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=bakery_dining,menu" />
+
+</head>
+
+<body>
+    <header>
+        <img src="assets/logocafe.png" alt="Logo Grão Nobre">
+        <button class="material-symbols-outlined" id="icon-menu" aria-label="Abrir menu" onclick="cliqueiMenu()">
+            menu
+        </button>
+
+        <nav>
+            <ul id="menu-header">
+                <li>
+                    <a href="#initial">Início</a>
+                </li>
+                <li>
+                    <a href="#cardapio">Cardápio</a>
+                </li>
+                <li>
+                    <a href="#about">Sobre</a>
+                </li>
+                <li>
+                    <a href="#galery">Galeria</a>
+                </li>
+                <li>
+                    <a href="#contact">Contato</a>
+                </li>
+                <li>
+                    <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-motorcycle" aria-hidden="true"></i> Pedir Delivery
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inicio" id="initial">
+
+            <div>
+                <h3>CAFÉ &bull; SABOR &bull; BONS MOMENTOS</h3>
+                <h1>Mais que um café, <span>é um momento</span></h1>
+                <p>Cafés especiais, bebidas quentes e geladas, salgados e doces para tornar o seu dia mais saboroso!</p>
+
+                <div class="botoes">
+                    <a href="#cardapio"> Ver Cardápio <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-whatsapp" aria-hidden="true"></i>Peça no Delivery
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="beneficios-cards">
+            <div class="menu-pai">
+                <div class="menu-1">
+                    <img src="assets/graosdecafe.png" alt="Grãos de café" class="icone">
+                    <div class="texto">
+                        <h4>Grãos selecionados</h4>
+                        <p>Qualidade em cada xícara</p>
+                    </div>
+                </div>
+
+                <div class="menu-2">
+                    <i class="fa-solid fa-mug-hot" aria-hidden="true"></i>
+                    <div class="texto">
+                        <h4>Bebidas artesanais</h4>
+                        <p>Receitas exclusivas</p>
+                    </div>
+                </div>
+
+                <div class="menu-3">
+                    <span class="material-symbols-outlined" aria-hidden="true">
+                        bakery_dining
+                    </span>
+                    <div class="texto">
+                        <h4>Salgados e doces</h4>
+                        <p>Para todo o momento</p>
+                    </div>
+                </div>
+
+                <div class="menu-4">
+                    <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    <div class="texto">
+                        <h4>Ambiente aconchegante</h4>
+                        <p>Venha nos visitar</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cardapio" id="cardapio">
+            <div class="card-1">
+                <h5>Nosso Cardápio</h5>
+                <h2>Descubra nossos sabores!</h2>
+                <p>Uma seleção especial de cafés, bebidas, salgados e doces feitos com muito carinho para você</p>
+            </div>
+
+            <div class="card-2">
+                <div class="bloco-1">
+                    <div class="card-img">
+                        <img src="assets/iloveimg-resized/expresso.jpg" alt="Café expresso" loading="lazy">
+                    </div>
+                    <div>
+                        <h5>Café Expresso</h5>
+                        <p>Intenso e Encorpado</p>
+                        <p class="dinheiro">R$ 6,90</p>
+                    </div>
+                </div>
+                <div class="bloco-2">
+                    <div class="card-img">
+                        <img src="assets/iloveimg-resized/capuccino.jpg" alt="Cappuccino" loading="lazy">
+                    </div>
+                    <div>
+                        <h5>Cappuccino</h5>
+                        <p>Cremoso e Irresistível</p>
+                        <p class="dinheiro">R$ 9,90</p>
+                    </div>
+                </div>
+                <div class="bloco-3">
+                    <div class="card-img">
+                        <img src="assets/iloveimg-resized/cafegelado.jpg" alt="Café Gelado" loading="lazy">
+                    </div>
+                    <div>
+                        <h5>Café Gelado</h5>
+                        <p>Refrescante e Saboroso</p>
+                        <p class="dinheiro">R$ 11,90</p>
+                    </div>
+                </div>
+                <div class="bloco-4">
+                    <div class="card-img">
+                        <img src="assets/iloveimg-resized/croissants.jpg" alt="Croissant" loading="lazy">
+                    </div>
+                    <div>
+                        <h5>Croissant</h5>
+                        <p>Crocante e macio</p>
+                        <p class="dinheiro">R$ 12,90</p>
+                    </div>
+                </div>
+                <div class="bloco-5">
+                    <div class="card-img">
+                        <img src="assets/iloveimg-resized/bolomorango.png" alt="Bolo de Morango" loading="lazy">
+                    </div>
+                    <div>
+                        <h5>Bolo de Morango</h5>
+                        <p>Recheio com frutas vermelhas</p>
+                        <p class="dinheiro">R$ 14,90</p>
+                    </div>
+                </div>
+
+                <div class="bloco-6">
+                    <div class="card-img">
+                        <img src="assets/iloveimg-resized/esfirras.jpg" alt="Esfirra" loading="lazy">
+                    </div>
+                    <div>
+                        <h5>Esfirras</h5>
+                        <p>Recheios com toque do chef</p>
+                        <p class="dinheiro">R$ 16,90</p>
+                    </div>
+
+                </div>
+                <a href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer">Ver Cardápio Completo
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+
+        </section>
+
+        <section class="sobre" id="about">
+
+            <div class="bloco-1">
+                <h5>Sobre nós</h5>
+                <h2>Paixão por café e boas histórias
+                </h2>
+                <p>Acreditamos que um bom café aproxima pessoas.
+                    Nosso espaço foi pensado para oferecer qualidade, sabor e um ambiente acolhedor para o seu dia a
+                    dia.
+                </p>
+
+            </div>
+
+            <div class="bloco-2">
+                <img src="assets/cafeteria.jpg" alt="Interior da cafeteria com balcão e luminárias" loading="lazy">
+            </div>
+
+            <div class="bloco-3">
+
+                <div class="cards">
+                    <h3><span><i class="fa-solid fa-star" aria-hidden="true"></i></span> Ingredientes de qualidade</h3>
+                    <p>Sempre os melhores insumos</p>
+                </div>
+
+                <div class="cards">
+
+                    <h3> <span><i class="fa-solid fa-user-group" aria-hidden="true"></i></span> Atendimento acolhedor
+                    </h3>
+                    <p>Você sempre bem atendido</p>
+
+                </div>
+
+                <div class="cards">
+
+                    <h3><span><i class="fa-solid fa-house" aria-hidden="true"></i></span> Ambiente confortável</h3>
+                    <p>Um espaço feito por você</p>
+
+                </div>
+
+                <div class="cards">
+
+                    <h3><span><i class="fa-brands fa-envira" aria-hidden="true"></i></span> Compromisso Sustentável</h3>
+                    <p>Mais sabor, menos impacto</p>
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="galeria" id="galery">
+            <div class="bloco-1">
+                <h5>Galeria</h5>
+                <h2>Nosso Espaço</h2>
+                <p>Um ambiente aconchegante para você desfrutar bons momentos
+                </p>
+
+                <div class="card-img">
+                    <img class="ambiente1" src="assets/ambiente1.jpg" alt="Salão da cafeteria com luminárias e balcão"
+                        loading="lazy">
+
+                    <div class="ambiente2e3">
+                        <img src="assets/ambiente2.jpg" alt="Clientes conversando e trabalhando nas mesas da cafeteria"
+                            loading="lazy">
+                        <img src="assets/ambiente3.jpg" alt="Mesas e cadeiras do salão com o balcão ao fundo"
+                            loading="lazy">
+                    </div>
+                </div>
+                <a href="https://www.instagram.com/instagram/" target="_blank" rel="noopener noreferrer">Veja mais
+                    no
+                    <span class="insta"><i class="fa-brands fa-instagram" aria-hidden="true"></i></span> Instagram</a>
+            </div>
+        </section>
+
+        <section class="depoimento">
+            <div class="bloco-1">
+                <h5>Depoimentos</h5>
+                <h2>O que nossos clientes dizem</h2>
+            </div>
+
+            <div class="card-pai">
+
+                <div class="card-filho1">
+                    <div class="estrelas">★★★★★
+                        <p>"O melhor café da cidade! Ambiente incrível e atendimento impecável"</p>
+                    </div>
+                    <div class="autor">
+                        <img src="assets/rostohomem.jpg" alt="Lucas Almeida" loading="lazy">
+                        <div class="info">
+                            <h4>Lucas Almeida</h4>
+                            <span>Empresário</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-filho2">
+                    <div class="estrelas">★★★★★
+                        <p>"Salgados e doces deliciosos, sempre tudo fresquinho. Amei demais!"</p>
+                    </div>
+                    <div class="autor">
+                        <img src="assets/rostomulher.jpg" alt="Maria Souza" loading="lazy">
+                        <div class="info">
+                            <h4>Maria Souza</h4>
+                            <span>Engenheira</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-filho3">
+                    <div class="estrelas">★★★★★
+                        <p>"Lugar perfeito para trabalhar e tomar um café de qualidade."</p>
+                    </div>
+                    <div class="autor">
+                        <img src="assets/rostohomem2.jpg" alt="Rafael Pereira" loading="lazy">
+                        <div class="info">
+                            <h4>Rafael Pereira</h4>
+                            <span>Biólogo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-filho4">
+                    <div class="estrelas">★★★★★
+                        <p>"Fiquei impressionada com o cuidado em cada detalhe. Amei o ambiente."</p>
+                    </div>
+                    <div class="autor">
+                        <img src="assets/rostomulher2.jpg" alt="Mariana Costa" loading="lazy">
+                        <div class="info">
+                            <h4>Mariana Costa</h4>
+                            <span>Arquiteta</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contato" id="contact">
+            <div class="bloco-1">
+                <h5>Contato</h5>
+                <h2>Venha nos visitar!</h2>
+                <p>Estamos prontos para te receber.
+                    Peça também pelo nosso delivery!
+                </p>
+
+                <div class="juncao-do-card-e-iframe">
+                    <div class="filho-principal">
+
+                        <div class="card-filho1">
+
+                            <div class="textos">
+                                <h4> <i class="fa-solid fa-location-dot" aria-hidden="true"></i>Endereço</h4>
+                                <p>Rua das flores, 123</p>
+                                <p>Rio de Janeiro, Centro/RJ</p>
+                            </div>
+                        </div>
+
+                        <div class="card-filho2">
+
+                            <div class="textos">
+                                <h4><i class="fa-regular fa-clock" aria-hidden="true"></i>Horário de funcionamento</h4>
+                                <p>Segunda a Sábado</p>
+                                <p>07h às 22h</p>
+                                <p> Domingo: 08h às 20h </p>
+                            </div>
+                        </div>
+
+                        <div class="card-filho3">
+
+                            <div class="textos">
+                                <h4> <i class="fa-solid fa-phone" aria-hidden="true"></i>Contato/Whatsapp</h4>
+                                <p>(21) 99999-9999</p>
+                                <p>Fale conosco pelo <a href="https://wa.me/5521999999999" target="_blank"
+                                        rel="noopener noreferrer">Whatsapp</a><i class="fa-brands fa-whatsapp"
+                                        style="color: rgb(99, 230, 190);" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="iframe-pai">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26607.99586630577!2d-43.19866709650465!3d-22.900492239191006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5e151c7217%3A0x7ffdf9c2fc30b97d!2sCentro%2C%20Rio%20de%20Janeiro%20-%20RJ!5e1!3m2!1spt-BR!2sbr!4v1793112596070!5m2!1spt-BR!2sbr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            title="localização da Grão Nobre" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <a class="whatsapp-icone" href="https://wa.me/5521999999999" target="_blank" rel="noopener noreferrer">
+            <img src="assets/whatsapp.png" alt="Falar no WhatsApp">
+        </a>
+    </main>
+    <footer>
+
+        <div class="div-img">
+            <img src="assets/logocafe.png" alt="Logo Grão Nobre" loading="lazy">
+        </div>
+
+        <div class="borda">
+
+            <section class="Principal">
+                <div class="texto">
+                    <h4>Mais que café, é um momento!</h4>
+                    <p>Uma cafeteria feita para quem valoriza bons sabores, boas conversas e pequenos momentos que
+                        fazem a vida mais especial</p>
+                </div>
+                <div class="icones">
+                    <a href="https://www.instagram.com/instagram/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@tiktok" target="_blank" rel="noopener noreferrer"
+                        aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.facebook.com/facebook" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@YouTube" target="_blank" rel="noopener noreferrer"
+                        aria-label="Youtube"><i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </section>
+
+            <section class="Navegacao">
+                <h4>Navegação</h4>
+                <div class="links">
+                    <a href="#initial">Início</a>
+                    <a href="#cardapio">Cardápio</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#galery">Galeria</a>
+                    <a href="#contact">Contato</a>
+                </div>
+            </section>
+
+            <section class="Newsletter">
+                <h4>Receba novidades</h4>
+                <p>Cadastre seu e-mail e fique por dentro de promoções, lançamentos e muito mais.</p>
+                <form action="" method="post">
+                    <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" aria-label="Seu e-mail">
+
+                    <button type="submit" aria-label="Inscrever"><i class="fa-solid fa-arrow-right"
+                            aria-hidden="true"></i>
+                    </button>
+                </form>
+            </section>
+        </div>
+
+        <p class="copy">&copy; 2026 Grão Nobre. Todos os direitos reservados.</p>
+        <p class="credito">Desenvolvido por <span>Matheus Pires</span> </p>
+    </footer>
+
+    <script>
+
+        const menu = document.getElementById('menu-header')
+
+        function cliqueiMenu() {
+            menu.classList.toggle('aberto')
+        }
+    </script>
+</body>
+
+</html>

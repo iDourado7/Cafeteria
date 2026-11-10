@@ -1,0 +1,147 @@
+@media screen and (min-width: 2560px) {
+    html {
+        font-size: 150%
+            /* 24px: textos e espaçamentos 25% maiores */
+    }
+
+    header {
+        height: 170px;
+
+        img {
+            width: 120px;
+        }
+    }
+
+    main {
+        .inicio {
+        
+            div {
+                p {
+                    margin: 30px 0;
+                    line-height: 40px;
+                }
+
+                .botoes {
+                    gap: 40px;
+                }
+            }
+        }
+
+        .inicio::before {
+            filter: blur(4px);
+        }
+
+        .beneficios-cards {
+
+            .menu-pai{
+                margin: 30px 0;
+            }
+            .icone {
+                width: 50px;
+
+            }
+
+            i,
+            span {
+                font-size: 50px;
+                margin-right: 50px;
+                width: 50px;
+                text-align: center;
+            }
+
+            .texto {
+
+                h4,
+                p {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+/* =====================================================
+   4K / TV - 3840px em diante
+   Base: o bloco de 2560px multiplicado por 1.5 (3840 / 2560 = 1.5)
+   - html: 150% -> 225%
+   - valores em px: x1.5
+   - valores em rem e %: continuam iguais (acompanham o html)
+   Este bloco precisa vir DEPOIS do bloco de 2560px.
+   ===================================================== */
+@media screen and (min-width: 3840px) {
+    html {
+        font-size: 225%;
+    }
+
+    header {
+        height: 255px;
+
+        img {
+            width: 180px;
+        }
+    }
+
+    main {
+        .inicio {
+        
+            div {
+                p {
+                    margin: 45px 0;
+                    line-height: 60px;
+                }
+
+                .botoes {
+                    gap: 60px;
+
+                    a {
+                        padding: .8rem;
+                        font-size: 1.4rem;
+                        border-radius: 1rem;
+                    }
+                }
+            }
+        }
+
+        .inicio::before {
+            filter: blur(6px);
+        }
+
+        .beneficios-cards {
+
+            .icone {
+                width: 75px;
+            }
+
+            i {
+                font-size: 65px;
+                width: 75px;
+                /* mesma largura da img, pra ficarem alinhados */
+                text-align: center;
+                margin-right: 20px;
+            }
+
+            span {
+                font-size: 75px;
+                margin-right: 75px;
+            }
+
+            .texto {
+
+                h4,
+                p {
+                    font-size: 45px;
+                }
+            }
+        }
+
+        .galeria{
+            .bloco-1{
+                .card-img{
+                    max-width: 60%;
+                    align-items: stretch;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,369 @@
+@media screen and (min-width: 768px) {
+
+    html{
+        scroll-padding-top: 7rem;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        /* esquerda | centro | direita */
+        align-items: center;
+        position: sticky;
+        /* também serve de referência para o item absoluto */
+        top: 0;
+        z-index: 9;
+        padding: 20px;
+        overflow-x: hidden;
+
+        img {
+            grid-column: 1;
+            justify-self: start;
+            margin-left: clamp(10px, 2vw, 30px);
+            width: clamp(60px, 6vw, 80px);
+        }
+
+
+        #icon-menu {
+            display: none;
+        }
+
+        nav {
+            width: auto;
+
+            #menu-header {
+                grid-column: 2;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: clamp(8px, 1.8vw, 36px);
+
+                li {
+                    width: auto;
+
+                    a {
+                        margin-top: 0;
+                        white-space: nowrap;
+                        font-size: clamp(0.85rem, 1.4vw, 1.1rem);
+                    }
+                }
+
+                /* Pedir delivery: canto direito do header */
+                li:last-child {
+                    position: absolute;
+                    right: clamp(10px, 2vw, 40px);
+                    top: 50%;
+                    transform: translateY(-50%);
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    main {
+        .inicio {
+            min-height: 32rem; /*pega o valor do height no dev tools e divide por 16 e obtem o valor do rem*/
+
+            div {
+
+                p {
+                    font-size: 1em;
+                }
+
+                .botoes {
+                    flex-direction: row;
+                    justify-content: center;
+                }
+            }
+
+        }
+
+        .inicio::before {
+            background-image: url('assets/bannerdesktop.png');
+        }
+
+        .beneficios-cards {
+            padding: 30px 40px;
+
+            .menu-pai {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+
+                .menu-1,
+                .menu-2,
+                .menu-3,
+                .menu-4 {
+                    margin-top: 0;
+                    padding: 20px 0;
+                }
+            }
+        }
+
+        .cardapio {
+            padding: 0;
+
+            .card-1 {
+                margin-top: 20px;
+            }
+
+            .card-2 {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                justify-items: center;
+                width: 95%;
+                max-width: none;
+                margin: 30px auto;
+                padding: 30px;
+                gap: 20px;
+
+                .bloco-1,
+                .bloco-2,
+                .bloco-3,
+                .bloco-4,
+                .bloco-5,
+                .bloco-6 {
+                    width: 100%;
+                    max-width: none;
+                    margin: 0;
+                }
+
+                a {
+                    grid-column: 1 / -1;
+                    justify-self: center;
+                    width: 100%;
+                }
+            }
+        }
+
+        .sobre {
+            .bloco-2 {
+
+                img {
+                    margin: 20px 0;
+                    width: 100%;
+                    display: block;
+                    margin-inline: auto;
+                }
+            }
+
+            .bloco-3 {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        .galeria {
+            .bloco-1 {
+                p {
+                    font-size: 1em;
+                }
+
+                .card-img {
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                    grid-template-rows: minmax(0, 1fr);
+                    justify-items: stretch;
+                    width: 60%;
+                    max-width: 56rem;
+                    
+                    gap: 15px;
+                    margin: 0 auto;
+
+                    .ambiente1 {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    .ambiente2e3 {
+                        display: grid;
+                        grid-template-rows: repeat(2, minmax(0, 1fr));
+                        gap: 10px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                a {
+                    padding: 10px;
+                }
+
+            }
+        }
+
+        .depoimento {
+            .card-pai {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 30px;
+                padding: 0 20px;
+                margin: 30px auto;
+
+                .card-filho1,
+                .card-filho2,
+                .card-filho3,
+                .card-filho4 {
+                    padding: 5px 6px;
+
+                    .autor{
+                        margin: auto 0;
+                    }
+                }
+            }
+        }
+
+        .contato {
+            .bloco-1 {
+
+                .juncao-do-card-e-iframe {
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                    align-items: stretch;
+                    gap: 15px;
+
+                    .filho-principal {
+
+                        .card-filho1,
+                        .card-filho2,
+                        .card-filho3 {
+                            margin-top: 10px;
+                        }
+                    }
+
+                    .iframe-pai {
+                        margin-top: 10px;
+                    }
+                }
+
+                p {
+                    font-size: 1em;
+                }
+            }
+        }
+
+        .cardapio .card-1,
+        .sobre .bloco-1,
+        .galeria .bloco-1,
+        .depoimento .bloco-1,
+        .contato .bloco-1 {
+            h5 {
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: clamp(1.3rem, 3vw, 1.6rem);
+            }
+
+            p {
+                font-size: 1rem;
+                max-width: 60ch;
+                /* 60 caractere por linha */
+                margin-inline: auto;
+            }
+        }
+
+    }
+
+    footer {
+
+        .div-img {
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+
+            img {
+                width: 5rem;
+                /*15%*/
+            }
+        }
+
+        .borda {
+            border-top: 2px solid #895129;
+            border-bottom: 2px solid #895129;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: start;
+            width: 100%;
+            padding: 0 15px;
+            gap: 10px;
+        }
+
+        .Principal {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            padding: 30px 0;
+            border-bottom: none;
+            .texto {
+                width: 100%;
+                text-align: center;
+
+
+                p {
+                    max-width: 400px;
+                    margin: 20px auto;
+                    font-size: 0.85rem;
+                    line-height: 1.4;
+                }
+
+
+            }
+        }
+
+        .Navegacao {
+            border-bottom: none;
+
+            .links {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+
+                a {
+                    margin: 0;
+                    padding: 2px 0;
+                    font-size: 0.85rem;
+                }
+            }
+        }
+
+        .Newsletter {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            padding: 30px 0;
+            border-bottom: none;
+
+            p,
+            form {
+                width: 90%;
+                font-size: 0.85rem;
+                line-height: 1.4;
+                margin: 0 0 8px;
+            }
+        }
+
+        .Principal .texto h4,
+        .Navegacao h4,
+        .Newsletter h4 {
+            font-size: 1.1rem;
+
+        }
+
+        .copy {
+            text-align: center;
+            padding: 8px 0;
+            font-size: 0.8rem;
+        }
+    }
+}
