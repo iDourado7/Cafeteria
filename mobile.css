@@ -364,7 +364,7 @@ main {
 
             a {
                 grid-column: 1/-1;
-                width: 90%;
+                width: 85%;
                 border-radius: 10px;
                 border: 2px solid var(--caramelo);
                 padding: 10px;
@@ -765,7 +765,7 @@ main {
         border-radius: 50%;
         background-color: #25D366;
         z-index: -1;
-        animation: pulso 3s ease-in-out infinite;
+        animation: pulso 2s ease-in-out infinite;
         /*animation: flutuar 2s ease-in-out infinite;*/
     }
 

@@ -63,7 +63,7 @@
 
     main {
         .inicio {
-            min-height: 32rem; /*pega o valor do height no dev tools e divide por 16 e obtem o valor do rem*/
+            min-height: 33rem; /*pega o valor do height no dev tools e divide por 16 e obtem o valor do rem*/
 
             div {
 
@@ -124,7 +124,7 @@
                 .bloco-4,
                 .bloco-5,
                 .bloco-6 {
-                    width: 100%;
+                    width: 90%;
                     max-width: none;
                     margin: 0;
                 }
@@ -142,7 +142,7 @@
 
                 img {
                     margin: 20px 0;
-                    width: 100%;
+                    width: 60%;
                     display: block;
                     margin-inline: auto;
                 }
@@ -151,6 +151,10 @@
             .bloco-3 {
                 display: grid;
                 grid-template-columns: repeat(2, minmax(0, 1fr));
+
+                .cards{
+                    padding: 10px;
+                }
             }
         }
 
@@ -202,8 +206,8 @@
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 gap: 30px;
-                padding: 0 20px;
-                margin: 30px auto;
+                padding: 10px 5px;
+                margin: 2rem;
 
                 .card-filho1,
                 .card-filho2,
@@ -225,8 +229,8 @@
                     display: grid;
                     grid-template-columns: repeat(2, minmax(0, 1fr));
                     align-items: stretch;
-                    gap: 15px;
-
+                    gap: 1.5rem;
+                    margin: 0 1rem;
                     .filho-principal {
 
                         .card-filho1,
@@ -278,7 +282,7 @@
             padding: 30px 0;
 
             img {
-                width: 5rem;
+                width: 6rem;
                 /*15%*/
             }
         }
@@ -290,8 +294,7 @@
             grid-template-columns: repeat(3, 1fr);
             align-items: start;
             width: 100%;
-            padding: 0 15px;
-            gap: 10px;
+            padding: 0 30px;
         }
 
         .Principal {
